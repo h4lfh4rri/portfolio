@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Zhou</title>
+    <link rel="icon" type="image/jpeg" href="../Image/favicons/favicon_regular.jpg">
+    <link rel="icon" type="image/jpeg" href="../Image/favicons/favicon_dark.jpg" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="left">
+            <div class="project_detail">
+                <div class="title_frame">
+                    <p class="title">08 design highlights</p>
+                </div>
+                <div class="large_project_image_container">
+                    <img src="../Image/highlights/highlights-thumbnail.jpg" class="large_project_image fade-slide active" alt="Project Slide 1">
+                    <img src="../Image/highlights/ms-01.jpg" class="large_project_image fade-slide" alt="Project Slide 2">
+                </div>
+                <div class="detail_text_icon">
+                    <div class="project_icon">
+                        <p>2020-2023</p>
+                        <p>UX/UI Design</p>
+                        <img src="../Image/icons/school.svg" width="32" height="32" alt="icon_uni">
+                    </div>
+                    <div class="brief_frame">
+                        <p class="brief">These works reflect my journey across various roles, from collaborating with teams on diverse projects to freelancing. These experiences have provided invaluable opportunities to apply the design skills I developed during my studies at art college, allowing me to experiment with creative solutions and deepen my understanding of visual design principles. <br><br> Along the way, I’ve also gained a wealth of professional insights. Collaborating with talented designers has been enriching, and I’m especially grateful to the mentors who guided me. Their advice and support have been instrumental in shaping my approach to design and fostering my growth as a professional.</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="../Image/highlights/spacique-01.jpg" class="gallery-image" alt="Gallery Image 1">
+                    <img src="../Image/highlights/spacique-02.jpg" class="gallery-image" alt="Gallery Image 2">
+                    <img src="../Image/highlights/bmh-01.jpg" class="gallery-image" alt="Gallery Image 3">
+                    <img src="../Image/highlights/pop-mart.jpg" class="gallery-image" alt="Gallery Image 4">
+                    <img src="../Image/highlights/ms-01.jpg" class="gallery-image" alt="Gallery Image 5">
+                    <img src="../Image/highlights/osc-01.jpg" class="gallery-image" alt="Gallery Image 6">
+                    <img src="../Image/highlights/inlife-01.jpg" class="gallery-image" alt="Gallery Image 7">
+                    <img src="../Image/highlights/mask-01.jpg" class="gallery-image" alt="Gallery Image 8">
+                    <img src="../Image/highlights/music-01.jpg" class="gallery-image" alt="Gallery Image 9">
+                    <img src="../Image/highlights/capitorch-01.jpg" class="gallery-image" alt="Gallery Image 10">
+                </div>
+                <div class="cta">
+                    <a href="../index.html" class="button">INDEX</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right_wrapper"> 
+                <div class="name_title">
+                    <a href="../index.html">
+                        <img src="../Image/name_logo/h.svg" width="180" height="32" alt="name_logo">
+                    </a>
+                    <p style="color: #828288;">UX/UI DESIGNER</p>
+                </div>
+                <p class="text_intro">
+                    Harry is a UX/UI designer who crafts intuitive, high-performance websites that align with business goals. With expertise in UX research, wireframing, prototyping, and UI design, he creates seamless, user-focused experiences. <br><br> His superpower is the ability to deeply understand business needs and transform them into effective design solutions, supported by a structured work pipeline. He is business-driven, with a strong focus on critical reviews, iteration, and design systems to ensure consistency across all projects.
+                </p>
+                <div class="button_group">
+                    <a href="javascript:void(0);" class="button" id="emailButton">Email</a>
+                    <p id="emailAddress" style="display: none; color: #828282; font-size: 22px;">h4zhou@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/h4rryzhou" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
+                </div>
+            </div>
+            <footer>
+                <p>2025 Harry Zhou</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailButton').addEventListener('click', function() {
+            var emailElement = document.getElementById('emailAddress');
+            emailElement.style.display = (emailElement.style.display === 'none') ? 'block' : 'none';
+        });
+
+        const slides = document.querySelectorAll('.fade-slide');
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 4000);
+    </script>
+    </body>
+</html>
