@@ -234,6 +234,11 @@ footer p {
   .brief_frame {
   font-size: 18px;
   }
+
+  .detail_text_icon {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
   
   .grid-container {
     display: flex;
