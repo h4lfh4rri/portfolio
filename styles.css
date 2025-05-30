@@ -226,6 +226,10 @@ footer p {
     align-items: flex-start;
     gap: 0px;
   }
+
+  .brief {
+  font-size: 18px;
+  }
   
   .grid-container {
     display: flex;
