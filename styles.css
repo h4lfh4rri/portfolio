@@ -231,6 +231,10 @@ footer p {
   font-size: 18px;
   }
   
+  .brief_frame {
+  font-size: 18px;
+  }
+  
   .grid-container {
     display: flex;
     flex-direction: column;
