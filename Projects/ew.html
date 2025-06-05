@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Zhou</title>
+    <link rel="icon" type="image/jpeg" href="../Image/favicons/favicon_regular.jpg">
+    <link rel="icon" type="image/jpeg" href="../Image/favicons/favicon_dark.jpg" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="left">
+            <div class="project_detail">
+                <div class="title_frame">
+                    <p class="title">06 easy wedding</p>
+                </div>
+                <div class="large_project_image_container">
+                    <img src="../Image/ew/ew-thumbnail.jpg" class="large_project_image fade-slide active" alt="Project Slide 1">
+                    <img src="../Image/ew/ew-01.jpg" class="large_project_image fade-slide" alt="Project Slide 2">
+                </div>
+                <div class="detail_text_icon">
+                    <div class="project_icon">
+                        <p>2022</p>
+                        <p>UI Design</p>
+                        <img src="../Image/icons/confectionery.svg" width="32" height="32" alt="icon_uni">
+                    </div>
+                    <div class="brief_frame">
+                        <p class="brief">The redesigned UI launch for Easy Weddings led to a significant increase in leads and conversions, enhancing their industry competitiveness and solidifying their position as a leading wedding planning resource. <br><br> Following the successful launch of the redesigned UI, Easy Weddings experienced a notable increase in leads and conversions. The improved platform has made them more competitive in the industry, strengthening their position as a go-to resource for wedding planning.</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="../Image/ew/ew-01.jpg" class="gallery-image" alt="Gallery Image 1">
+                    <img src="../Image/ew/ew-02.jpg" class="gallery-image" alt="Gallery Image 2">
+                </div>
+                <div class="cta">
+                    <a href="../index.html" class="button">INDEX</a>
+                    <a href="hello.html" class="button">NEXT <img src="../Image/icons/arrow.svg" alt="next arrow" width="16" height="16"></a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right_wrapper"> 
+                <div class="name_title">
+                    <a href="../index.html">
+                        <img src="../Image/name_logo/h.svg" width="240" height="100" alt="name_logo">
+                    </a>
+                    <p style="color: #828288;">UX/UI DESIGNER</p>
+                </div>
+                <p class="text_intro">
+                    Harry is a UX/UI designer who crafts intuitive, high-performance websites that align with business goals. With expertise in UX research, wireframing, prototyping, and UI design, he creates seamless, user-focused experiences. <br> <br>His superpower is the ability to deeply understand business needs and translate them into effective design solutions, supported by a structured workflow. He is business-driven, with a strong focus on critical reviews, iteration, and design systems to ensure the delivery of high-quality design outcomes.
+                </p>
+                <div class="button_group">
+                    <a href="javascript:void(0);" class="button" id="emailButton">Email</a>
+                    <p id="emailAddress" style="display: none; color: #828282; font-size: 22px;">h4zhou@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/h4rryzhou" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
+                </div>
+            </div>
+            <footer>
+                <p>2025 Harry Zhou</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailButton').addEventListener('click', function() {
+            var emailElement = document.getElementById('emailAddress');
+            emailElement.style.display = (emailElement.style.display === 'none') ? 'block' : 'none';
+        });
+
+        const slides = document.querySelectorAll('.fade-slide');
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 4000);
+    </script>
+    </body>
+</html>
