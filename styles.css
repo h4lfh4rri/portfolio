@@ -191,7 +191,7 @@ footer p {
   font-size: 32px;
   font-weight: 500;
   font-style: normal;
-  line-height: normal;
+  line-height: 100%;
   font-variant: small-caps;
   text-decoration: none; 
   margin:0;
