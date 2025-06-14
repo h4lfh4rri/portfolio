@@ -47,6 +47,7 @@ body {
 
 .text_intro {
   font-size: larger;
+  line-height: 140%;
 }
 
 .button_group {
@@ -201,6 +202,7 @@ footer p {
   font-size: larger;
   margin-top:20pt;
   margin-bottom: 20pt;
+  line-height: 140%;
 }
 
 .gallery {
