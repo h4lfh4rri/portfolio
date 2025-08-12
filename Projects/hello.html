@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Zhou</title>
+    <link rel="icon" type="image/jpeg" href="../Image/favicons/favicon_regular.jpg">
+    <link rel="icon" type="image/jpeg" href="../Image/favicons/favicon_dark.jpg" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="page-container">
+        <div class="grid-container">
+          <div class="left">
+            <div class="project_detail">
+              <div class="title_frame">
+                <p class="title">07 hello inspector</p>
+              </div>
+              <div class="large_project_image_container">
+                <img src="../Image/hello/hello-thumbnail.jpg" class="large_project_image fade-slide active" alt="Project Slide 1">
+                <img src="../Image/hello/hello-01.jpg" class="large_project_image fade-slide" alt="Project Slide 2">
+              </div>
+              <div class="detail_text_icon">
+                <div class="project_icon">
+                  <p>2021</p>
+                  <p>UX/UI Designer</p>
+                  <img src="../Image/icons/town.svg" width="32" height="32" alt="icon_uni">
+                </div>
+                <div class="brief_frame">
+                  <p class="brief">The Hello Inspection app faced significant user dissatisfaction, with negative feedback primarily focused on its functionality and interface. Inspectors also voiced concerns about the lack of reusability for their inspection reports, leading many to seek alternative ways to sell reports to multiple home buyers. Additionally, there was a strong demand for a centralised platform to manage orders, track income, and streamline report-related activities. Recognising these issues, management decided to introduce a new feature—a marketplace for inspectors to sell their reports and efficiently handle orders and finances. <br><br> The introduction of the marketplace brought noticeable improvements. The number of new users increased by 30%, with most engaging with the marketplace feature. Complaints about the app significantly dropped, and the drop-off rate decreased from 20% to 11%. Additionally, user satisfaction, as measured by NPS scores, saw an increase from 4.1 to 4.5. These results highlight the success of the marketplace in addressing user concerns and improving the app’s overall functionality and appeal.</p>
+                </div>
+              </div>
+              <div class="gallery">
+                <img src="../Image/hello/hello-01.jpg" class="gallery-image" alt="Gallery Image 1">
+                <img src="../Image/hello/hello-02.jpg" class="gallery-image" alt="Gallery Image 2">
+              </div>
+              <div class="cta">
+                <a href="../index.html" class="button">INDEX</a>
+                <a href="highlights.html" class="button">NEXT <img src="../Image/icons/arrow.svg" alt="next arrow" width="16" height="16"></a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right_wrapper"> 
+              <div class="name_title">
+                <a href="../index.html">
+                  <img src="../Image/name_logo/h.svg" width="251" height="38.45" alt="name_logo">
+                </a>
+                <p style="color: #828288;">UX/UI DESIGNER</p>
+              </div>
+              <p class="text_intro">
+                Harry is a UX/UI designer who crafts intuitive, high-performance websites that align with business goals. With expertise in UX research, wireframing, prototyping, and UI design, he creates seamless, user-focused experiences. <br> <br>His superpower is the ability to deeply understand business needs and translate them into effective design solutions, supported by a structured workflow. He is business-driven, with a strong focus on critical reviews, iteration, and design systems to ensure the delivery of high-quality design outcomes.
+              </p>
+              <div class="button_group">
+                <a href="javascript:void(0);" class="button" id="emailButton">Email</a>
+                <p id="emailAddress" style="display: none; color: #828282; font-size: 22px;">h4zhou@gmail.com</p>
+                <a href="https://www.linkedin.com/in/h4rryzhou" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
+              </div>
+            </div>
+            <footer>
+              <p>2025 Harry Zhou</p>
+            </footer>
+          </div>
+        </div>
+        <script>
+          document.getElementById('emailButton').addEventListener('click', function() {
+            var emailElement = document.getElementById('emailAddress');
+            emailElement.style.display = (emailElement.style.display === 'none') ? 'block' : 'none';
+          });
+
+          const slides = document.querySelectorAll('.fade-slide');
+          let current = 0;
+          setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+          }, 4000);
+        </script>
+      </div>
+    </body>
+</html>
